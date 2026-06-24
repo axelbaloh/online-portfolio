@@ -18,6 +18,8 @@
                 <video
                     controls
                     preload="metadata"
+                    playsinline
+                    muted
                     class="h-125 w-full bg-black object-contain"
                 >
                     <source

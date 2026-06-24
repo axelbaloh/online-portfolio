@@ -43,7 +43,18 @@ return [
                 'Tailwind'
             ]
         ],
-
+        [
+            'title' => 'SAE 501 - Usine chocolat',
+            'type' => 'video',
+            'media' => 'projects/back/sae501-usinechoco.mp4',
+            'description' => 'Pour la SAE 501, nous avons repris, avec mon groupe, l\'application que j\'avais essayé de développer pour les opérateurs de l\'usine chocolat. Nous avons créé une application qui obtenait les commandes depuis le site vitrine et qui permettait de voir les stocks dans le frigo, gérer les commandes en temps réel et voir les différentes statistiques de production',
+            'tags' => [
+                'Laravel',
+                'Livewire',
+                'SQL',
+                'PHP'
+            ]
+        ],
         [
             'title' => 'Si la vie m\'était chantée',
             'type' => 'video',
