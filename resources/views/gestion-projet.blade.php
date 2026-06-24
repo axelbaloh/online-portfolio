@@ -54,7 +54,7 @@
                             </h3>
 
                             <span class="text-xs px-2 py-1 rounded bg-green-100 text-green-700">
-                               BUT MMI 1
+                                BUT MMI 1
                             </span>
                         </div>
 
