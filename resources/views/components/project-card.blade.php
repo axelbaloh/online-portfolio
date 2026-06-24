@@ -14,20 +14,14 @@
                 >
 
             @else
-
-                <video
-                    controls
-                    preload="metadata"
-                    playsinline
-                    muted
-                    class="h-125 w-full bg-black object-contain"
-                >
-                    <source
-                        src="{{ Storage::url($project['media']) }}"
-                        type="video/mp4"
-                    >
-                </video>
-
+                <iframe
+                    class="h-125 w-full"
+                    src="https://www.youtube.com/embed/{{ $project['media'] }}?rel=0"
+                    title="{{ $project['title'] }}"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
             @endif
 
         </div>

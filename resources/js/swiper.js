@@ -18,45 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     /**
-     * 🎬 VIDEO CONTROLLER SIMPLE ET SAFE
+     * Stoppe toutes les vidéos YouTube
+     * lorsqu'on change de slide.
      */
-    class VideoController {
-        stopAll(container) {
-            container.querySelectorAll('video').forEach(video => {
-                video.pause();
-                try {
-                    video.currentTime = 0;
-                } catch (e) {}
-            });
-        }
-
-        play(video, container) {
-            if (!video) return;
-
-            this.stopAll(container);
-
-            video.muted = true;
-            video.playsInline = true;
-
-            try {
-                video.currentTime = 0;
-            } catch (e) {}
-
-            const promise = video.play();
-            if (promise) promise.catch(() => {});
-        }
-
-        pauseAll() {
-            document.querySelectorAll('video').forEach(v => v.pause());
-        }
+    function stopYoutubeVideos(swiper) {
+        swiper.el.querySelectorAll('iframe').forEach(frame => {
+            const src = frame.src;
+            frame.src = src;
+        });
     }
-
-    const videoController = new VideoController();
 
     /**
      * ================= FRONT SWIPER =================
      */
-    const frontSwiper = new Swiper('.frontSwiper', {
+    new Swiper('.frontSwiper', {
         ...baseConfig,
 
         navigation: {
@@ -65,22 +40,16 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         on: {
-            init(swiper) {
-                videoController.stopAll(swiper.el);
-            },
-
             slideChangeTransitionStart(swiper) {
-                videoController.stopAll(swiper.el);
+                stopYoutubeVideos(swiper);
             }
-
-            // ❌ IMPORTANT : aucun autoplay ici
         }
     });
 
     /**
      * ================= BACK SWIPER =================
      */
-    const backSwiper = new Swiper('.backSwiper', {
+    new Swiper('.backSwiper', {
         ...baseConfig,
 
         navigation: {
@@ -89,40 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         on: {
-            init(swiper) {
-                videoController.stopAll(swiper.el);
-            },
-
             slideChangeTransitionStart(swiper) {
-                videoController.stopAll(swiper.el);
+                stopYoutubeVideos(swiper);
             }
-
-            // ❌ aucun autoplay ici
-        }
-    });
-
-    /**
-     * ▶️ LECTURE UNIQUEMENT AU CLIC UTILISATEUR
-     */
-    document.addEventListener('click', (e) => {
-        const video = e.target.closest('video');
-        if (!video) return;
-
-        const swiperEl = video.closest('.swiper');
-        if (!swiperEl) return;
-
-        const swiper = swiperEl.swiper;
-        if (!swiper) return;
-
-        videoController.play(video, swiper.el);
-    });
-
-    /**
-     * 🧯 sécurité onglet caché
-     */
-    document.addEventListener('visibilitychange', () => {
-        if (document.hidden) {
-            videoController.pauseAll();
         }
     });
 
