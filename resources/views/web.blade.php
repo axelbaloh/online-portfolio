@@ -1,4 +1,5 @@
 <x-layout.base>
+    <h1 class="text-center text-3xl m-4 font-bold text-slate-800">Mes projets web</h1>
     <div class="mx-auto max-w-7xl px-6 py-12">
         {{-- FRONT --}}
         <section class="mb-24">
