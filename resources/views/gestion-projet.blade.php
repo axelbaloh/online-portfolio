@@ -27,7 +27,7 @@
                         </span>
 
                         <span class="px-2 py-1 text-xs rounded-full bg-green-500 text-white">
-                            Compétence utile
+                            Compétences utiles
                         </span>
                     </div>
                 </header>
@@ -124,7 +124,7 @@
                         </span>
 
                         <span class="px-2 py-1 text-xs rounded-full bg-red-500 text-white">
-                            Compétence requise
+                            Compétences requises
                         </span>
                     </div>
                 </header>
@@ -217,11 +217,11 @@
 
                     <div class="flex gap-2 mt-3 flex-wrap">
                         <span class="px-2 py-1 text-xs rounded-full bg-white/20 text-white">
-                            3 compétences
+                            4 compétences
                         </span>
 
                         <span class="px-2 py-1 text-xs rounded-full bg-red-500 text-white">
-                            Compétence requise
+                            Compétences requises
                         </span>
                     </div>
                 </header>
