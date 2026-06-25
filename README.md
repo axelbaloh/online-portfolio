@@ -52,11 +52,11 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-### 5. Désactiver la base de données
+### 5. Lancer le projet 
+```bash
+php artisan serve
+```
 
-Dans .env, remplacez DB_CONNEXION par DB_CONNECTION=null
-
-### 6. Lancer le 
 
 
 
