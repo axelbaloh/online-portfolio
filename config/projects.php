@@ -8,7 +8,7 @@ return [
             'title' => 'Usine Chocolat',
             'type' => 'youtube',
             'media' => 'iTto6oVpirw',
-            'description' => 'Site vitrine réalisé pour les visiteurs de l\'usine chocolat des journées portes ouverts de l\'IUT d\'Haguenau',
+            'description' => 'Site vitrine réalisé pour les visiteurs de l\'usine chocolat lors de la journée portes ouvertes de l\'IUT d\'Haguenau',
             'tags' => [
                 'HTML',
                 'CSS',
@@ -20,7 +20,7 @@ return [
             'title' => 'Le jeu Dé\'cheh',
             'type' => 'video',
             'media' => '0SROxNTyWb4',
-            'description' => 'Projet réalisé pour "La maison pour la science" lors d\'une SAE. Dans celui-ci il est possible de trier des déchets dans des cases. Ce projet a été fait en grande partie avec Javascript afin de permettre le glisser déposer et la validation des tris',
+            'description' => 'Projet réalisé pour "La maison pour la science" lors d\'une SAE. Dans celui-ci il est possible de trier des déchets dans des catégories. Ce projet a été fait en grande partie avec Javascript afin de permettre le glisser déposer et la validation des tris',
             'tags' => [
                 'Js',
                 'Symfony',

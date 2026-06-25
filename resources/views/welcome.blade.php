@@ -19,7 +19,7 @@
             </h1>
 
             <p class="text-xl text-gray-200 mb-12">
-                Découvrez mes projets et compétences en développement web.
+                Découvrez mes projets et compétences en développement web et dispositifs intéractifs.
             </p>
         </div>
 
@@ -75,8 +75,8 @@
                     <div class="w-1/2 pl-12">
                         <h3 class="text-2xl font-bold text-blue-400">Septembre 2021 - Juillet 2023</h3>
                         <p class="text-gray-300">
-                            Inscription et études à la faculté de Strasbourg dans le parcours <span class="uppercase">CMI IIRVIJ
-                            </span> <span class=="capitalize">(cursus master ingénérie, spécialités : informatique, images, réalité virtuelle, intéractions et jeux).
+                            Inscription et études à la faculté d'Illkirch-Graffestaden dans le parcours <span class="uppercase">CMI IIRVIJ
+                            </span> <span class="capitalize">(cursus master ingénérie, spécialités : informatique, images, réalité virtuelle, intéractions et jeux).
                         </p>
                     </div>
                 </div>
