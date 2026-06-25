@@ -1,8 +1,8 @@
 
 <x-layout.base title="Portfolio Axel Baloh - Dispositifs interactifs">
     <div id="instructions-overlay">
-        <h1 class="text-center text-3xl m-4 font-bold text-slate-800">Mes projets de dispositifs intéractifs</h1>
         <div class="instructions-box">
+            <h1 class="text-center text-3xl m-4 font-bold text-slate-800">Mes projets de dispositifs intéractifs</h1>
             <h2>Contrôles</h2>
 
             <p><span class="font-bold">ZQSD</span> : se déplacer</p>
