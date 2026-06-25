@@ -87,7 +87,7 @@
                     <li class="bg-white border rounded-lg p-4 shadow-sm hover:shadow-md transition">
                         <div class="flex justify-between">
                             <h3 class="font-semibold text-slate-800">
-                                Résolution des projets
+                                Résolution des problèmes
                             </h3>
 
                             <span class="text-xs px-2 py-1 rounded bg-green-100 text-green-700">
