@@ -36,7 +36,7 @@ return [
             'title' => 'Screllum',
             'type' => 'video',
             'media' => 'xT6vxgNDprA',
-            'description' => 'Projet de SAE visant à créer un site de gestion de projet semblable à Trello',
+            'description' => 'Projet de SAE visant à créer un site de gestion de projets semblable à Trello',
             'tags' => [
                 'Laravel',
                 'MySql',
