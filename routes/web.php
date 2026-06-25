@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebController;
+use App\Http\Controllers\UxController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -13,10 +14,7 @@ Route::get('/di', function () {
     return view('di');
 })->name('di');
 
-Route::get('/ux', function () {
-    return view('ux');
-})->name('ux');
-
+Route::get('/ux', [UxController::class, 'index'])->name("ux");
 
 Route::get('/gestion-de-projets', function () {
     return view('gestion-projet');

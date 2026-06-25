@@ -55,18 +55,6 @@ return [
                 'PHP'
             ]
         ],
-        [
-            'title' => 'Si la vie m\'était chantée',
-            'type' => 'video',
-            'media' => 'projects/back/silavie.mp4',
-            'description' => 'Gestion complète des utilisateurs.',
-            'tags' => [
-                'Admin',
-                'CRUD',
-                'PHP'
-            ]
-        ]
-
     ]
 
 ];

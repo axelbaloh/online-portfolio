@@ -1,6 +1,6 @@
-<x-layout.base>
+<x-layout.base title="Portfolio Axel Baloh - Projets Web">
+    <div class="mx-auto max-w-7xl px-6 pt-36 pb-12">
     <h1 class="text-center text-3xl m-4 font-bold text-slate-800">Mes projets web</h1>
-    <div class="mx-auto max-w-7xl px-6 py-12">
         {{-- FRONT --}}
         <section class="mb-24">
             <h2 class="mb-8 text-4xl font-bold text-slate-800">

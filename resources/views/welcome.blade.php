@@ -1,4 +1,4 @@
-<x-layout.base>
+<x-layout.base title="Portfolio Axel Baloh - Accueil">
 
     <style>
         html {
@@ -75,7 +75,8 @@
                     <div class="w-1/2 pl-12">
                         <h3 class="text-2xl font-bold text-blue-400">Septembre 2021 - Juillet 2023</h3>
                         <p class="text-gray-300">
-
+                            Inscription et études à la faculté de Strasbourg dans le parcours <span class="uppercase">CMI IIRVIJ
+                            </span> <span class=="capitalize">(cursus master ingénérie, spécialités : informatique, images, réalité virtuelle, intéractions et jeux).
                         </p>
                     </div>
                 </div>
@@ -111,9 +112,9 @@
                 <!-- 2026 -->
                 <div class="timeline-item relative flex items-center mb-16 opacity-0 -translate-x-20 transition-all duration-1000">
                     <div class="w-1/2 pr-12 text-right">
-                        <h3 class="text-2xl font-bold text-blue-400">Septembre 2023</h3>
+                        <h3 class="text-2xl font-bold text-blue-400">2026</h3>
                         <p class="text-gray-300">
-                            Réorientation en <span class="uppercase">but mmi</span> afin d'obtenir davantage de compétences dans le modne du développement web et du développment de dispositifs intéractifs.
+                            Obtention du diplôme du <span class="uppercase">but mmi</span> à Haguenau.
                         </p>
                     </div>
 
@@ -137,7 +138,7 @@
                 <!-- Carte 1 -->
                 <article class="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
                     <img
-                        src="{{ asset('storage/images/experience1.jpg') }}"
+                        src="{{ asset('storage/images/mjc.jpg') }}"
                         alt="Expérience 1"
                         class="w-full h-56 object-cover"
                     >
@@ -159,7 +160,7 @@
                 <!-- Carte 2 -->
                 <article class="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
                     <img
-                        src="{{ asset('storage/images/experience2.jpg') }}"
+                        src="{{ asset('storage/images/icube.jpg') }}"
                         alt="Expérience 2"
                         class="w-full h-56 object-cover"
                     >
@@ -181,7 +182,7 @@
                 <!-- Carte 3 -->
                 <article class="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
                     <img
-                        src="{{ asset('storage/images/experience3.jpg') }}"
+                        src="{{ asset('storage/images/silavie.jpg') }}"
                         alt="Expérience 3"
                         class="w-full h-56 object-cover"
                     >
@@ -204,52 +205,70 @@
         </div>
     </section>
 
-    <script>
-        if ('scrollRestoration' in history) {
-            history.scrollRestoration = 'manual';
-        }
+    <!-- CERTIFICATIONS -->
+    <section class="bg-gray-900 py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-16">
+                Mes certifications
+            </h2>
 
-        window.addEventListener('load', () => {
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: 'instant'
-            });
-        });
+            <div class="grid md:grid-cols-3 gap-8">
 
-        document.addEventListener('DOMContentLoaded', () => {
+                <!-- Opquast -->
+                <article class="bg-gray-800 rounded-xl p-8 shadow-lg hover:scale-105 transition">
+                    <div class="text-4xl mb-4">🏆</div>
 
-            const items = document.querySelectorAll('.timeline-item');
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">
+                        Opquast
+                    </h3>
 
-            const observer = new IntersectionObserver((entries) => {
+                    <p class="text-gray-300 mb-2">
+                        Certification attestant des connaissances en qualité web,
+                        accessibilité, performance et bonnes pratiques numériques.
+                    </p>
 
-                entries.forEach(entry => {
+                    <span class="text-gray-500 text-sm">
+                        Obtenue en 2026
+                    </span>
+                </article>
 
-                    if (entry.isIntersecting) {
+                <!-- Pix -->
+                <article class="bg-gray-800 rounded-xl p-8 shadow-lg hover:scale-105 transition">
+                    <div class="text-4xl mb-4">💻</div>
 
-                        entry.target.classList.remove(
-                            'opacity-0',
-                            'translate-x-20',
-                            '-translate-x-20'
-                        );
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">
+                        Pix
+                    </h3>
 
-                        entry.target.classList.add(
-                            'opacity-100',
-                            'translate-x-0'
-                        );
+                    <p class="text-gray-300 mb-2">
+                        Certification des compétences numériques : information,
+                        communication, création de contenu, sécurité et environnement numérique.
+                    </p>
 
-                        observer.unobserve(entry.target);
-                    }
+                    <span class="text-gray-500 text-sm">
+                        Obtenue en 2021, 2023 et 2026
+                    </span>
+                </article>
 
-                });
+                <!-- SecNumacadémie -->
+                <article class="bg-gray-800 rounded-xl p-8 shadow-lg hover:scale-105 transition">
+                    <div class="text-4xl mb-4">🔒</div>
 
-            }, {
-                threshold: 0.2
-            });
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">
+                        SecNum
+                    </h3>
 
-            items.forEach(item => observer.observe(item));
+                    <p class="text-gray-300 mb-2">
+                        Formation à la cybersécurité proposée par l'ANSSI :
+                        sécurité des données, des usages numériques et des systèmes d'information.
+                    </p>
 
-        });
-    </script>
+                    <span class="text-gray-500 text-sm">
+                        Obtenue en 2026
+                    </span>
+                </article>
 
+            </div>
+        </div>
+    </section>
 </x-layout.base>

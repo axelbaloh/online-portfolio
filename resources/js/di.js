@@ -22,6 +22,11 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 
 const container = document.getElementById("container");
 
+if (!container) {
+	console.warn("Three.js: container not found, script aborted");
+	return;
+}
+
 renderer.setSize(
 	container.clientWidth,
 	container.clientHeight

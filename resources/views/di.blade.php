@@ -1,6 +1,7 @@
 
-<x-layout.base>
+<x-layout.base title="Portfolio Axel Baloh - Dispositifs interactifs">
     <div id="instructions-overlay">
+        <h1 class="text-center text-3xl m-4 font-bold text-slate-800">Mes projets de dispositifs intéractifs</h1>
         <div class="instructions-box">
             <h2>Contrôles</h2>
 

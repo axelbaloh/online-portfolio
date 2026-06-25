@@ -31,11 +31,16 @@
             aria-label="Navigation principale"
             class="max-w-7xl mx-auto px-4 py-4"
         >
-            <ul class="flex flex-wrap justify-center gap-4 md:gap-8">
+            <ul class="
+                flex flex-wrap justify-center gap-3
+                max-w-[320px] mx-auto
+                sm:max-w-none sm:gap-8
+                md:flex-nowrap
+            ">
                 <li>
                     <a
                         href="{{ route('home') }}"
-                        class="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded px-2 py-1"
+                        class="underline hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded px-2 py-1"
                     >
                         Accueil
                     </a>
@@ -44,7 +49,7 @@
                 <li>
                     <a
                         href="{{ route('web') }}"
-                        class="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded px-2 py-1"
+                        class="underline hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded px-2 py-1"
                     >
                         Développement Web
                     </a>
@@ -53,7 +58,7 @@
                 <li>
                     <a
                         href="{{ route('di') }}"
-                        class="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded px-2 py-1"
+                        class="underline hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded px-2 py-1"
                     >
                         Dispositifs interactifs
                     </a>
@@ -62,7 +67,7 @@
                 <li>
                     <a
                         href="{{ route('ux') }}"
-                        class="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded px-2 py-1"
+                        class="underline hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded px-2 py-1"
                     >
                         UX
                     </a>
@@ -71,7 +76,7 @@
                 <li>
                     <a
                         href="{{ route('gestion-projet') }}"
-                        class="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded px-2 py-1"
+                        class="underline hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded px-2 py-1"
                     >
                         Gestion de projets
                     </a>
@@ -108,8 +113,9 @@
                     <a
                         href="mailto:axel.baloh@gmail.com"
                         aria-label="Envoyer un email à Axel Baloh"
+                        class="underline"
                     >
-                        📧 axel.baloh@email.com
+                        📧 axel.baloh@gmail.com
                     </a>
 
 
